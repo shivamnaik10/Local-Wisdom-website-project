@@ -1,1 +1,187 @@
 
+/*global styles*/
+html { width: 1024px; height: 768px; margin:0 auto;}
+body {
+	margin:0px; padding:0;
+    width: 1024px;
+    height: 768px;
+    
+    overflow: hidden;
+	font-size:18px;
+	color:#4a4948;
+    -webkit-font-smoothing: antialiased; /* for desktop safari testing */
+    -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit – not sure if we need this one*/
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+.container {
+	overflow: hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);;
+	width: 1024px; height: 768px;
+	position: relative;
+	-webkit-transform : translate3d(0,0,0); 
+	margin: 0px;padding: 0px;
+	top:0px;left:0px;
+	background:url(../images/bg.jpg) 0 0 repeat-x;
+}
+
+.header{
+	width:100%;
+	height:106px;
+	background: url(../images/header.jpg) 0 0 repeat-x;
+}
+
+.header .title, .header .titleright{margin-top:22px;}
+.header .titleblock{float:left; padding-left:107px; padding-top:22px; font-size:24px; height:106px;}
+h3 { font-weight:normal;}
+.titleblock h3{font-size:30px; margin:0; padding:0;}
+.titleright{float:right; margin-right:28px;}
+
+.content {width:100%; height:662px;position: relative;}
+.contentbox{width:780px; height:494px; background:#e6dfc1; margin:64px 119px 0px;-moz-border-radius: 8px; border-radius: 8px;position:relative;}
+
+.clear{ font-size: 1px; line-height: 1px; margin: 0px; padding: 0px; clear: both; }
+.left{float:left;}
+.right{float:right;}
+
+
+/****************  bottom nav   *****************************/
+
+
+
+
+/****************  home page content  *****************************/
+
+#homepage .header{text-align:center;}
+
+
+.hex{ position:absolute; text-align:center;}
+.hex h3{ margin:112px 10px 0px; display:block;}
+#rheumhex{ left:60px; top:20px;}
+#SOChex{left:380px; top:152px;}
+#gastrohex{left:700px; top:75px;}
+
+
+/****************  Rheumatology page content  *****************************/
+
+#rheumpage .titleblock{background:url(../images/rheumhexsmall.png) 20px 12px no-repeat;}
+#rheumpage .contentbox{width:680px; height:394px; padding:50px;line-height:50px;}
+
+
+/****************  SOC page content  *****************************/
+#socpage .titleblock{background:url(../images/SOChexsmall.png) 20px 12px no-repeat;}
+#socpage .contentbox { width:720px; height:454px;}
+#socpage .contentbox hr{color:#4a4948; background-color:#4a4948; height:1px;border:0;margin-top:2px;}
+
+/****************  Gastroenterology page content  *****************************/
+#gastropage .titleblock{background:url(../images/gastrohexsmall.png) 20px 12px no-repeat;}
+#gastropage .contentbox div{height:460px; margin-top:34px;}
+#gastropage .contentbox .left{width:250px; margin-left:32px; }
+
+/**************** Home Page added css ******************/
+.rheu{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-52%, -80%);
+}
+.site{
+  position: absolute;
+  top: 50%;
+  transform: translate(12%, -84%);
+}
+.gastro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -83%);
+}
+.people{
+	position:relative;
+	transform: translate(-1%, 144%);
+}
+.refimage{
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, 60%);
+}
+.imagetopright{
+    position: absolute;
+    left: 50%;
+    transform: translate(20%, 70%);
+}
+.buttongroup {
+  background-color: #000000; 
+  border: 1px solid black; 
+  color: yellow; 
+  padding: 10px 24px; 
+  cursor: pointer;
+  transform: translate(50%, 23%);  
+}
+.socbutton{
+  background-color: #000000; 
+  border: 1px solid black; 
+  color: yellow; 
+  padding: 10px 24px; 
+  cursor: pointer;
+  transform: translate(50%, 131%); 
+}
+.active {
+  color: white;
+}
+
+#ref {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.popupref {
+  display: none;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: max-content; 
+  height: max-content; 
+  background-color: #F3F2EC; 
+  transform: translate(-20%, -90%);
+}
+
+.popupimage {
+   margin: auto;
+  display: block;
+  width: 80%;
+  
+}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: 3px;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.integrationclass{
+animation-name: integrationsoc;
+  animation-duration: 7s;
+}
+@keyframes integrationsoc {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.scroll{
+	overflow:auto;
+	
+}
