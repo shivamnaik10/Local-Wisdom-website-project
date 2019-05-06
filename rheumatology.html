@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Clinical Talking Points</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+<link rel="apple-touch-startup-image" href="images/startup.png" />
+<link type="text/css" rel="stylesheet" href="css/ctpoints.css" />
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/ctpoints.js"></script>
+
+</head>
+<body>
+
+	<div class="container" id='rheumpage'>
+
+		<div class='header'>
+			<div class='titleblock'>
+				<h3>Rheumatology</h3>
+				<i>Research and Treatment</i>
+			</div>
+			<div class="imagetopright">
+				<img
+					src="/Rutgers/Internship/Developer Example/SourceCode/images/titleright.png"
+					width="368" height="47" class='' alt="Clinical Talking Points">
+			</div>
+			<div class='clear'></div>
+		</div>
+		<!--end header-->
+
+		<div class='content'>
+			<div class='contentbox'>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+				ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+				aliquip ex ea commodo consequat. Duis aute irure dolor in
+				reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+				pariatur. Excepteur sint
+
+
+				<div class="refimage">
+
+					<img id="ref"
+						src="/Rutgers/Internship/Developer Example/SourceCode/images/ref.png"
+						height="75" width="150"></a>
+
+					<div id="popupref" class="popupref">
+						<span class="close">&times;</span> <img id="newimage"
+							class="popupimage">
+						<div id="caption"></div>
+					</div>
+
+				</div>
+
+			</div>
+			<!--end contentbox-->
+			<div id="navbar" style="width: 100%">
+				<a
+					href="/Rutgers/Internship/Developer Example/SourceCode/index.html"><button
+						class="buttongroup" style="margin: 40px;">
+						<img id="ref"
+							src="/Rutgers/Internship/Developer Example/SourceCode/images/homeicon.png"
+							width="15" height="15">
+					</button></a> <a
+					href="/Rutgers/Internship/Developer Example/SourceCode/rheumatology.html">
+					<button class="buttongroup active" style="margin: 40px;">Rheumatology</button>
+				</a> <a href="/Rutgers/Internship/Developer Example/SourceCode/soc.html">
+					<button class="buttongroup" style="margin: 40px;">Site of
+						Care</button>
+				</a> <a
+					href="/Rutgers/Internship/Developer Example/SourceCode/gastroenterology.html">
+					<button class="buttongroup" style="margin: 40px;">Gastroenterology</button>
+				</a>
+			</div>
+
+
+		</div>
+		<!--end content-->
+
+	</div>
+	<!--end container-->
+
+
+	<script>
+
+var modal = document.getElementById('popupref');
+var img = document.getElementById('ref');
+var modalImg = document.getElementById("newimage");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = "/Rutgers/Internship/Developer Example/SourceCode/images/popup.png"
+}
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
